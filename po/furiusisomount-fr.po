@@ -1,0 +1,391 @@
+# French translation for furiusisomount
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the furiusisomount package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: furiusisomount\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-25 11:45+0100\n"
+"PO-Revision-Date: 2010-12-19 19:52+0000\n"
+"Last-Translator: bouchard renaud <Unknown>\n"
+"Language-Team: French <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-21 04:48+0000\n"
+"X-Generator: Launchpad (build 16532)\n"
+
+#: aboutbox.py:35
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  bouchard renaud https://launchpad.net/~renaud-bouchard\n"
+"  peterl https://launchpad.net/~ubuntu-linguamix"
+
+#: aboutbox.py:40
+msgid "Developer:"
+msgstr "Développeur:"
+
+#: filehash.py:25 filehash.py:36 main.py:246
+msgid "Calculating, please wait..."
+msgstr "Calcul en cours, veuilez patienter..."
+
+#: globals.py:22
+msgid "Furius ISO Mount Tool"
+msgstr "Furius ISO Mount outil"
+
+#: globals.py:23
+msgid ""
+"Simple Gtk+ Interface to Mount ISO, IMG, BIN, MDF and NRG Image files "
+"without burning to disk."
+msgstr ""
+"Simple interface Gtk+ pour monter des fichiers d'images en format ISO, IMG, "
+"BIN, MDF et NRG sans avoir à graver de media physique."
+
+#: imageaction.py:35 imageaction.py:58 imageaction.py:69 imageaction.py:79
+#: main.py:83 main.py:340 main.py:386
+#, python-format
+msgid ""
+"Error mounting image.\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur de montage d'image.\n"
+"Erreur imprévue: %s"
+
+#: imageaction.py:36
+msgid "Defaulting to home directory for mounting."
+msgstr "Répertoire de montage par défault \"home\""
+
+#: imageaction.py:55
+#, python-format
+msgid ""
+"%s successfully mounted @ %s. If required, run the following commands to "
+"remove:\n"
+"  :fusermount -u %s\n"
+"  :rmdir %s"
+msgstr ""
+"%s a été monté avec succès dans %s. Si nécessaire, exécutez les commandes "
+"suivantes pour l'enlever:\n"
+"  :fusermount -u %s\n"
+"  :rmdir %s"
+
+#: imageaction.py:66
+#, python-format
+msgid ""
+"%s successfully mounted @ %s. If required, run the following commands to "
+"remove:\n"
+"  :gksu -u root umount %s\n"
+"  :rmdir %s"
+msgstr ""
+"%s a été monté avec succès dans %s. Si nécessaire, exécutez les commandes "
+"suivantes pour l'enlever:\n"
+"  :gksu -u root umount %s\n"
+"  :rmdir %s"
+
+#: imageaction.py:76 main.py:79 main.py:336 main.py:382
+#, python-format
+msgid ""
+"Error mounting image.\n"
+"OS error(%s): %s"
+msgstr ""
+"Erreur de montage d'image.\n"
+"Erreur système(%s): %s"
+
+#: imageaction.py:103
+#, python-format
+msgid ""
+"Error saving history to file.\n"
+"OS error(%s): %s"
+msgstr ""
+"Erreur, sauvons l'historique dans un fichier.\n"
+"OS erreur(%s): %s"
+
+#: imageaction.py:106
+#, python-format
+msgid ""
+"Error saving history to file\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur pendant la sauvegarde de l'historique sur un fichier\n"
+"Erreur inattendue: %s"
+
+#: imageaction.py:128
+#, python-format
+msgid "%s successfully unmounted."
+msgstr "%s démonté avec succés."
+
+#: imageaction.py:130 main.py:358 main.py:401
+#, python-format
+msgid ""
+"Error unmounting image.\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur de démontage de l'image.\n"
+"Erreur inattendue: %s"
+
+#: imageaction.py:142 main.py:364
+#, python-format
+msgid ""
+"Error burning image.\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur de gravure de l'image.\n"
+"Erreur inattendue: %s"
+
+#: imageaction.py:152
+#, python-format
+msgid ""
+"Error launching nautilus.\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur au lancement de nautilus.\n"
+"Erreur inattendue: %s"
+
+#: main.py:51
+msgid "Application started..."
+msgstr "Application démarré..."
+
+#: main.py:81 main.py:338 main.py:384
+#, python-format
+msgid ""
+"Error mounting image.\n"
+"IO error(%s): %s"
+msgstr ""
+"Erreur au montage de l'image.\n"
+"IO erreur(%s): %s"
+
+#: main.py:95 main.py:112
+#, python-format
+msgid ""
+"Error loading history.\n"
+"OS error(%s): %s"
+msgstr ""
+"Erreur au chargement de l'historique.\n"
+"OS erreur(%s): %s"
+
+#: main.py:97 main.py:114
+#, python-format
+msgid ""
+"Error loading history.\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur au chargement de l'historique.\n"
+"Erreur inattendue: %s"
+
+#: main.py:125
+#, python-format
+msgid ""
+"Error creating settings directory.\n"
+"OS error(%s): %s"
+msgstr ""
+"Erreur à la création du dossier des réglages.\n"
+"OS erreur(%s): %s"
+
+#: main.py:127
+#, python-format
+msgid ""
+"Error creating settings directory.\n"
+"IO error(%s): %s"
+msgstr ""
+"Erreur à la création du dossier des réglages.\n"
+"IO erreur(%s): %s"
+
+#: main.py:129
+#, python-format
+msgid ""
+"Error creating settings directory.\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur à la création du dossier des réglages.\n"
+"Erreur inattendue: %s"
+
+#: main.py:139
+#, python-format
+msgid "New settings file created at %s"
+msgstr "Nouveau fichier de réglages créé dans %s"
+
+#: main.py:141
+#, python-format
+msgid ""
+"Error creating settings file.\n"
+"OS error(%s): %s"
+msgstr ""
+"Erreur à la création du fichier de réglages.\n"
+"OS erreur(%s): %s"
+
+#: main.py:143
+#, python-format
+msgid ""
+"Error creating settings file.\n"
+"IO error(%s): %s"
+msgstr ""
+"Erreur à la création du fichier de réglages.\n"
+"IO erreur(%s): %s"
+
+#: main.py:145
+#, python-format
+msgid ""
+"Error creating settings file.\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur à la création du fichier de réglages.\n"
+"Erreur inattendue: %s"
+
+#: main.py:159
+msgid "_Browse..."
+msgstr "_Parcourir..."
+
+#: main.py:163
+msgid "_Mount"
+msgstr "_Monter"
+
+#: main.py:167 main.py:234 main.py:260
+msgid "_Checksum"
+msgstr "_Somme de contrôle"
+
+#: main.py:171
+msgid "Bur_n"
+msgstr "Grave_r"
+
+#: main.py:175
+msgid "_Unmount"
+msgstr "_Démonter"
+
+#: main.py:176
+msgid "View Log"
+msgstr "Voir le journal"
+
+#: main.py:177
+msgid "Delete Log"
+msgstr "Effacer le journal"
+
+#: main.py:178
+msgid "Select Image"
+msgstr "Sélectionnez une image"
+
+#: main.py:179 main.py:289 main.py:308
+msgid "No Image Selected"
+msgstr "Pas d'image sélectionnée"
+
+#: main.py:181 main.py:248
+msgid "No Checksum Generated"
+msgstr "Pas de somme de contrôle générée"
+
+#: main.py:183 main.py:355
+msgid "No Mount Point Selected"
+msgstr "Pas de point de montage sélectionné"
+
+#: main.py:185
+msgid "Mounted Images:"
+msgstr "Images montées:"
+
+#: main.py:186
+msgid "Drag image files into above window to quickly mount"
+msgstr ""
+"Glisser les fichiers image dans la fenêtre ci-dessus pour les monter "
+"rapidements"
+
+#: main.py:196
+msgid "Mount Point"
+msgstr "Point de montage"
+
+#: main.py:197
+msgid "Image File"
+msgstr "Fichier Image"
+
+#: main.py:236
+msgid "_Cancel"
+msgstr "_Annuler"
+
+#: main.py:240
+msgid "Checksum generation started..."
+msgstr "Génération de la somme de contrôle démarré..."
+
+#: main.py:256
+#, python-format
+msgid "%s:%s"
+msgstr "%s:%s"
+
+#: main.py:259
+msgid "Checksum generation aborted!"
+msgstr "Génération de la somme de contrôle interrompue!"
+
+#: main.py:268
+msgid "Open Image.."
+msgstr "Ouvrir l'Image.."
+
+#: main.py:288
+msgid ""
+"File not found. \n"
+"Please check source exists."
+msgstr ""
+"Fichier non trouvé. \n"
+"S'il vous plait, vérifiez l'existence de vos sources."
+
+#: main.py:307
+msgid ""
+"File does not appear to be a compatible Image. \n"
+"Please check source."
+msgstr ""
+"Le fichier ne semble pas être une image compatible. \n"
+"S'il vous plait, vérifiez vos sources."
+
+#: main.py:318
+#, python-format
+msgid "%s not found."
+msgstr "%s non trouvé."
+
+#: main.py:322
+msgid "Are you sure you wish to delete the log?"
+msgstr "Êtes vous sur de vouloir effacer le journal?"
+
+#: main.py:326 main.py:328
+#, python-format
+msgid ""
+"Error deleting log.\n"
+"OS error(%s): %s"
+msgstr ""
+"Erreur pendant l'effacement du journal.\n"
+"OS erreur(%s): %s"
+
+#: main.py:330
+#, python-format
+msgid ""
+"Error deleting log.\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur pendant l'effacement du journal.\n"
+"Erreur inattendue: %s"
+
+#: main.py:393
+msgid "Application closed!"
+msgstr "Application fermé!"
+
+#: main.py:397
+#, python-format
+msgid ""
+"%s is still mounted.\n"
+"Do you wish to unmount it before exiting?"
+msgstr ""
+"%s est encore monté.\n"
+"Voulez vous le démonter avant de sortir?"
+
+#: main.py:408
+#, python-format
+msgid ""
+"Error saving unmounted images to file.\n"
+"OS error(%s): %s"
+msgstr ""
+"Erreur pendant la sauvegarde des images non montées vers un fichier.\n"
+"OS erreur(%s): %s"
+
+#: main.py:410
+#, python-format
+msgid ""
+"Error saving unmounted images to file\n"
+"Unexpected error: %s"
+msgstr ""
+"Erreur pendant la sauvegarde des images non montées vers un fichier.\n"
+"Erreur inattendue: %s"

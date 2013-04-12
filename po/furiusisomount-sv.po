@@ -1,0 +1,388 @@
+# Swedish translation for furiusisomount
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the furiusisomount package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: furiusisomount\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-08-25 11:45+0100\n"
+"PO-Revision-Date: 2011-07-25 22:24+0000\n"
+"Last-Translator: Christopher Forster <Unknown>\n"
+"Language-Team: Swedish <sv@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2013-03-21 04:48+0000\n"
+"X-Generator: Launchpad (build 16532)\n"
+
+#: aboutbox.py:35
+msgid "translator-credits"
+msgstr ""
+"Launchpad Contributions:\n"
+"  Anders Pamdal https://launchpad.net/~anders-pamdal\n"
+"  Christopher Forster https://launchpad.net/~christopherforster\n"
+"  starbux https://launchpad.net/~starbux"
+
+#: aboutbox.py:40
+msgid "Developer:"
+msgstr "Utvecklare:"
+
+#: filehash.py:25 filehash.py:36 main.py:246
+msgid "Calculating, please wait..."
+msgstr "Beräknar, vänligen vänta..."
+
+#: globals.py:22
+msgid "Furius ISO Mount Tool"
+msgstr "Furius ISO Moteringsverktyg"
+
+#: globals.py:23
+msgid ""
+"Simple Gtk+ Interface to Mount ISO, IMG, BIN, MDF and NRG Image files "
+"without burning to disk."
+msgstr ""
+"Enkelt Gtk+ Interface för att montera ISO, IMG, BIN, MDF och NRG Image filer "
+"utan att bränna till disk."
+
+#: imageaction.py:35 imageaction.py:58 imageaction.py:69 imageaction.py:79
+#: main.py:83 main.py:340 main.py:386
+#, python-format
+msgid ""
+"Error mounting image.\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid montering av avbild.\n"
+"Oväntat fel: %s"
+
+#: imageaction.py:36
+msgid "Defaulting to home directory for mounting."
+msgstr "Försätter hemmappen för montering."
+
+#: imageaction.py:55
+#, python-format
+msgid ""
+"%s successfully mounted @ %s. If required, run the following commands to "
+"remove:\n"
+"  :fusermount -u %s\n"
+"  :rmdir %s"
+msgstr ""
+"%s Lyckad montering @ %s. Vid behov, kör följande kommando för att ta bort:\n"
+"  :fusermount -u %s\n"
+"  :rmdir %s"
+
+#: imageaction.py:66
+#, python-format
+msgid ""
+"%s successfully mounted @ %s. If required, run the following commands to "
+"remove:\n"
+"  :gksu -u root umount %s\n"
+"  :rmdir %s"
+msgstr ""
+"%s Lyckad montering @ %s. Vid behov, kör följande kommando för att ta bort:\n"
+"  :gksu -u root umount %s\n"
+"  :rmdir %s"
+
+#: imageaction.py:76 main.py:79 main.py:336 main.py:382
+#, python-format
+msgid ""
+"Error mounting image.\n"
+"OS error(%s): %s"
+msgstr ""
+"Fel vid montering av bild.\n"
+"OS fel(%s): %s"
+
+#: imageaction.py:103
+#, python-format
+msgid ""
+"Error saving history to file.\n"
+"OS error(%s): %s"
+msgstr ""
+"Fel vid sparning av historik till fil.\n"
+"OS fel(%s): %s"
+
+#: imageaction.py:106
+#, python-format
+msgid ""
+"Error saving history to file\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid sparning av historik till fil\n"
+"Oväntat fel: %s"
+
+#: imageaction.py:128
+#, python-format
+msgid "%s successfully unmounted."
+msgstr "%s lyckad avmontering."
+
+#: imageaction.py:130 main.py:358 main.py:401
+#, python-format
+msgid ""
+"Error unmounting image.\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid avmontering av bild.\n"
+"Oväntat fel: %s"
+
+#: imageaction.py:142 main.py:364
+#, python-format
+msgid ""
+"Error burning image.\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid bränning av bild.\n"
+"Oväntat fel: %s"
+
+#: imageaction.py:152
+#, python-format
+msgid ""
+"Error launching nautilus.\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid start av nautilus.\n"
+"Oväntat fel: %s"
+
+#: main.py:51
+msgid "Application started..."
+msgstr "Applikation startas..."
+
+#: main.py:81 main.py:338 main.py:384
+#, python-format
+msgid ""
+"Error mounting image.\n"
+"IO error(%s): %s"
+msgstr ""
+"Fel vid montering av bild.\n"
+"IO fel(%s): %s"
+
+#: main.py:95 main.py:112
+#, python-format
+msgid ""
+"Error loading history.\n"
+"OS error(%s): %s"
+msgstr ""
+"Fel vid inläsning av historik.\n"
+"OS fel(%s): %s"
+
+#: main.py:97 main.py:114
+#, python-format
+msgid ""
+"Error loading history.\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid inläsning av historik.\n"
+"Oväntat fel: %s"
+
+#: main.py:125
+#, python-format
+msgid ""
+"Error creating settings directory.\n"
+"OS error(%s): %s"
+msgstr ""
+"Fel vid skapande av inställningsmappen.\n"
+"OS fel(%s): %s"
+
+#: main.py:127
+#, python-format
+msgid ""
+"Error creating settings directory.\n"
+"IO error(%s): %s"
+msgstr ""
+"Fel vid skapande av inställningsmappen.\n"
+"IO fel(%s): %s"
+
+#: main.py:129
+#, python-format
+msgid ""
+"Error creating settings directory.\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid skapande av inställningsmappen.\n"
+"Oväntat fel: %s"
+
+#: main.py:139
+#, python-format
+msgid "New settings file created at %s"
+msgstr "Ny inställningsfil skapad %s"
+
+#: main.py:141
+#, python-format
+msgid ""
+"Error creating settings file.\n"
+"OS error(%s): %s"
+msgstr ""
+"Fel vid skapande av inställningsfil.\n"
+"OS fel(%s): %s"
+
+#: main.py:143
+#, python-format
+msgid ""
+"Error creating settings file.\n"
+"IO error(%s): %s"
+msgstr ""
+"Fel vid skapande av inställningsfil.\n"
+"IO fel(%s): %s"
+
+#: main.py:145
+#, python-format
+msgid ""
+"Error creating settings file.\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid skapande av inställningsfil.\n"
+"Oväntat fel: %s"
+
+#: main.py:159
+msgid "_Browse..."
+msgstr "_Bläddra..."
+
+#: main.py:163
+msgid "_Mount"
+msgstr "_Montera"
+
+#: main.py:167 main.py:234 main.py:260
+msgid "_Checksum"
+msgstr "_Kontrollsumma"
+
+#: main.py:171
+msgid "Bur_n"
+msgstr "Brä_nn"
+
+#: main.py:175
+msgid "_Unmount"
+msgstr "_Avmontera"
+
+#: main.py:176
+msgid "View Log"
+msgstr "Visa logg"
+
+#: main.py:177
+msgid "Delete Log"
+msgstr "Ta bort logg"
+
+#: main.py:178
+msgid "Select Image"
+msgstr "Välj bild"
+
+#: main.py:179 main.py:289 main.py:308
+msgid "No Image Selected"
+msgstr "Ingen bild vald"
+
+#: main.py:181 main.py:248
+msgid "No Checksum Generated"
+msgstr "Ingen genererad kontrollsumma"
+
+#: main.py:183 main.py:355
+msgid "No Mount Point Selected"
+msgstr "Ingen monteringspunkt vald"
+
+#: main.py:185
+msgid "Mounted Images:"
+msgstr "Monterade bilder:"
+
+#: main.py:186
+msgid "Drag image files into above window to quickly mount"
+msgstr "Dra bildfiler till fönstret ovan för snabbmontering"
+
+#: main.py:196
+msgid "Mount Point"
+msgstr "Monteringspunkt"
+
+#: main.py:197
+msgid "Image File"
+msgstr "Bildfil"
+
+#: main.py:236
+msgid "_Cancel"
+msgstr "_Avbryt"
+
+#: main.py:240
+msgid "Checksum generation started..."
+msgstr "Generering av kontrollsumma startad..."
+
+#: main.py:256
+#, python-format
+msgid "%s:%s"
+msgstr "%s:%s"
+
+#: main.py:259
+msgid "Checksum generation aborted!"
+msgstr "Generering av kontrollsumma avbruten!"
+
+#: main.py:268
+msgid "Open Image.."
+msgstr "Öppna bild.."
+
+#: main.py:288
+msgid ""
+"File not found. \n"
+"Please check source exists."
+msgstr ""
+"Filen hittades ej. \n"
+"Vänligen kontrollera källan."
+
+#: main.py:307
+msgid ""
+"File does not appear to be a compatible Image. \n"
+"Please check source."
+msgstr ""
+"Filen verkar ej vara kompatibel bild. \n"
+"Vänligen kontroller källan."
+
+#: main.py:318
+#, python-format
+msgid "%s not found."
+msgstr "%s hittades ej."
+
+#: main.py:322
+msgid "Are you sure you wish to delete the log?"
+msgstr "Är du säker att du vill ta bort loggen?"
+
+#: main.py:326 main.py:328
+#, python-format
+msgid ""
+"Error deleting log.\n"
+"OS error(%s): %s"
+msgstr ""
+"Fel vid borttagning av log.\n"
+"OS fel(%s): %s"
+
+#: main.py:330
+#, python-format
+msgid ""
+"Error deleting log.\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid borttagning av log.\n"
+"Oväntat fel: %s"
+
+#: main.py:393
+msgid "Application closed!"
+msgstr "Applikation stängd!"
+
+#: main.py:397
+#, python-format
+msgid ""
+"%s is still mounted.\n"
+"Do you wish to unmount it before exiting?"
+msgstr ""
+"%s är fortfarande monterad.\n"
+"Vill du avmontera den innan avslut?"
+
+#: main.py:408
+#, python-format
+msgid ""
+"Error saving unmounted images to file.\n"
+"OS error(%s): %s"
+msgstr ""
+"Fel vid sparning av omonterad bild till fil.\n"
+"OS fel(%s): %s"
+
+#: main.py:410
+#, python-format
+msgid ""
+"Error saving unmounted images to file\n"
+"Unexpected error: %s"
+msgstr ""
+"Fel vid sparning av omonterad bild till fil.\n"
+"Oväntat fel: %s"

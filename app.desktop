@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Furius ISO Mount
+Type=Application
+Exec=furiusisomount
+Terminal=false
+GenericName[en_GB]=
+Icon=gtk-cdrom
+Categories=AudioVideo;
+GenericName=Furius ISO Mount
+Comment[en_GB]=Simple Gtk+ Interface to Mount ISO, IMG, BIN, MDF and NRG Image files without burning to disk.
