@@ -1,0 +1,41 @@
+Author: Alessio Treglia <quadrispro@ubuntu.com>
+Description: Change the installation path, the sources aren't installed under
+ src.
+---
+ furiusisomount |    2 +-
+ src/globals.py |   10 +++++-----
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+--- furiusisomount.orig/furiusisomount
++++ furiusisomount/furiusisomount
+@@ -1,3 +1,3 @@
+ #!/bin/sh
+ 
+-python "src/main.py" "$1"
++python "/usr/share/furiusisomount/main.py" "$1"
+--- furiusisomount.orig/src/globals.py
++++ furiusisomount/src/globals.py
+@@ -29,12 +29,12 @@ assembly_name = 'furiusisomount'
+ home_directory = os.path.expanduser('~')
+ settings_directory = os.path.join(home_directory, '.furiusisomount')
+ source_directory = os.path.join(os.path.dirname(__file__))
+-resource_directory = os.path.join(source_directory, '..', 'res')
+-image_directory = os.path.join(source_directory, '..', 'pix')
+-document_directory = os.path.join(source_directory, '..', 'doc')
++resource_directory = os.path.join(source_directory, 'res')
++image_directory = os.path.join(source_directory, 'pix')
++document_directory = os.path.join(source_directory, 'doc')
+ locale_directory = os.path.join(source_directory, '..', 'locale')
+ if not os.path.isdir(locale_directory) :
+-    locale_directory = os.path.join(source_directory, '..', '..', 'locale')
++    locale_directory = os.path.join(source_directory, '..', 'locale')
+ 
+ #files
+ application_interface = os.path.join(resource_directory, 'main_window.glade')
+@@ -45,4 +45,4 @@ mount_list = os.path.join(settings_direc
+ history_list = os.path.join(settings_directory, 'FuriusMountHistory.txt')
+ image_burn_button = os.path.join(image_directory, 'imageburn.png')
+ image_checksum_button = os.path.join(image_directory, 'imagechecksum.png')
+-settings_file = os.path.join(settings_directory, 'settings.cfg')
+\ No newline at end of file
++settings_file = os.path.join(settings_directory, 'settings.cfg')

@@ -1,0 +1,78 @@
+furiusisomount (0.11.3.1~repack0-2) experimental; urgency=low
+
+  * New maintainer. (Closes: #699635)
+  * Update watch file, thanks to Bart Martens.
+  * Update copyright file to version 1.0 format.
+  * Bump to Standards-Version 3.9.4, no changes needed.
+
+ -- Prach Pongpanich <prachpub@gmail.com>  Mon, 11 Feb 2013 17:23:45 +0700
+
+furiusisomount (0.11.3.1~repack0-1) unstable; urgency=low
+
+  * New upstream release:
+    - Translations update.
+  * Switch to dh_python2.
+  * Demote brasero to Suggests.
+  * Fix lintian description-synopsis-starts-with-article.
+  * Repack upstream's tarball to remove BZR control directories
+    and *.pyc files.
+  * Update watch file.
+  * debian/copyright: Update as per DEP-5 rev.173.
+
+ -- Alessio Treglia <alessio@debian.org>  Sat, 02 Apr 2011 11:04:50 +0200
+
+furiusisomount (0.11.3.0-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Alessio Treglia <alessio@debian.org>  Tue, 08 Feb 2011 18:58:50 +0100
+
+furiusisomount (0.11.3.0-1) experimental; urgency=low
+
+  * New upstream release:
+    - Add localization support.
+  * Bump Standards.
+  * debian/control:
+    - Recommends on brasero.
+    - Adjust description to fix lintian warning
+      'description-contains-invalid-control-statement', it contained a line
+      starting with dot-character.
+    - A bit of cleanup.
+  * Change files permissions after they have been installed.
+  * Refresh patches.
+
+ -- Alessio Treglia <alessio@debian.org>  Tue, 05 Oct 2010 11:01:18 +0200
+
+furiusisomount (0.11.2.1-1) unstable; urgency=low
+
+  * New upstream release:
+    - Added support for the ISO-13346 "UDF" file system specification
+      when using the loop mount option.
+  * Refresh debian/patches/01-setup.py.diff patch.
+  * Add debian/gbp.conf file.
+
+ -- Alessio Treglia <alessio@debian.org>  Sat, 26 Jun 2010 16:52:04 +0200
+
+furiusisomount (0.11.2.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Switch to dpkg 3.0 (quilt) source format.
+  * debian/control:
+    - s/python-all-dev/python/ in Build-Depends field.
+    - Move python from Build-Depends-Indep to Build-Depends because
+      it's needed to run fakeroot debian/rules clean.
+    - Add Vcs-* tags.
+    - Change my email address.
+    - Bump Standards-Version.
+  * Update debian/copyright file.
+  * Remove pyc files just before building.
+  * Refresh 01-setup.py.diff patch.
+  * Refresh 02-installation_path.diff patch.
+
+ -- Alessio Treglia <alessio@debian.org>  Tue, 15 Jun 2010 10:52:47 +0200
+
+furiusisomount (0.11.1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #552184).
+
+ -- Alessio Treglia <quadrispro@ubuntu.com>  Sat, 24 Oct 2009 11:56:55 +0200

@@ -1,0 +1,59 @@
+Author: Alessio Treglia <alessio@debian.org>
+Description: Provide an installation script using distutils.
+---
+ setup.py |   50 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 50 insertions(+)
+
+--- /dev/null
++++ furiusisomount/setup.py
+@@ -0,0 +1,50 @@
++#!/usr/bin/python
++
++import os
++from distutils.core import setup
++
++modules = map(lambda x: x.rstrip('.py'), filter(lambda x: x.endswith('.py'),os.listdir("src")))
++
++data_files = [(os.path.join('share', 'pixmaps'), ['pix/furiusisomount.png'])]
++
++for path in ('doc', 'pix', 'res'):
++    for root, dirs, files in os.walk(path):
++        to_add = []
++
++        for filename in files:
++            to_add.append(os.path.join(root, filename))
++
++        if to_add:
++            data_files.append((os.path.join('share', 'furiusisomount', root), to_add))
++
++setup(
++    name = "furiusisomount",
++    version = "0.11.3.0",
++    description = "An ISO, IMG, BIN, MDF and NRG image management utility",
++    long_description = """Furius ISO Mount is a simple application for mounting .iso, .img, .bin, .mdf
++ and .ng image files without burning them to disk.
++ .
++ It provides the following features:
++  - Automatically Mounts ISO, IMG, BIN, MDF and NRG image files.
++  - Automatically creates a mount point in your home directory.
++  - Automatically Unmounts the Image files.
++  - Automatically removes the mount directory to return your home directory to
++    its previous state.
++  - Automatically saves the history of the last 10 images mounted.
++  - Mounts multiple images.
++  - Burn ISO and IMG Files to optical disk.
++  - Generate Md5 and SHA1 checksums.
++  - Automatically retrieves any previously unmounted images.
++  - Automatically generates a log file of all commands needed to mount and
++    unmount images manually.
++  - Language support (currently Czech, Danish, French, Hungarian, Italian,
++    German, Polish, Slovenian, Spanish and Turkish are available).
++""",
++    author = "Dean Harris",
++    author_email = "marcus_furius@hotmail.com",
++    url = "https://launchpad.net/furiusisomount",
++    package_dir = {'':'src'},
++    py_modules = modules,
++    data_files = data_files
++)
++

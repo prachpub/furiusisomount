@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python2
+
+override_dh_auto_install:
+	dh_auto_install -- --install-lib=/usr/share/furiusisomount
+
+override_dh_install:
+	dh_install
+	find $(CURDIR)/debian/furiusisomount/usr/share -type f | xargs chmod -x

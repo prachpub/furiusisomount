@@ -1,0 +1,3 @@
+version=3
+opts=dversionmangle=s/~repack\d*$// \
+https://launchpad.net/furiusisomount/ .*/furiusisomount_(\d.*)\.(?:tgz|tar\.(?:gz|bz2|xz))

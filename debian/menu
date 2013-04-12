@@ -1,0 +1,5 @@
+?package(furiusisomount):needs="X11" \
+ section="Applications/File Management"\
+ title="Furius ISO Mount"\
+ command="/usr/bin/furiusisomount"\
+ icon="/usr/share/pixmaps/furiusisomount.xpm"
