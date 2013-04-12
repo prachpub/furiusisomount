@@ -1,11 +1,20 @@
-furiusisomount (0.11.3.1~repack0-2) experimental; urgency=low
+furiusisomount (0.11.3.1~repack1-1) experimental; urgency=low
 
   * New maintainer. (Closes: #699635)
   * Update watch file, thanks to Bart Martens.
   * Update copyright file to version 1.0 format.
   * Bump to Standards-Version 3.9.4, no changes needed.
 
- -- Prach Pongpanich <prachpub@gmail.com>  Mon, 11 Feb 2013 17:23:45 +0700
+ -- Prach Pongpanich <prachpub@gmail.com>  Mon, 12 Apr 2013 17:23:45 +0700
+
+furiusisomount (0.11.3.1~repack1-0.1) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * Repack upstream source to add missing .po files. Thanks to Prach
+    Pongpanich <prachpub@gmail.com> for the patch. Closes: #703553.
+  * Set high urgency due to RC bug.
+
+ -- Serafeim Zanikolas <sez@debian.org>  Thu, 21 Mar 2013 23:29:40 +0100
 
 furiusisomount (0.11.3.1~repack0-1) unstable; urgency=low
 
