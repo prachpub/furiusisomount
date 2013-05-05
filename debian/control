@@ -1,5 +1,5 @@
 Source: furiusisomount
-Section: utils
+Section: otherosfs
 Priority: optional
 Maintainer: Prach Pongpanich <prachpub@gmail.com>
 Build-Depends: debhelper (>= 7.0.50~),
