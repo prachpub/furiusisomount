@@ -3,10 +3,9 @@ furiusisomount (0.11.3.1~repack1-1) experimental; urgency=low
   * New maintainer (Closes: #699635)
   * Update watch file, thanks to Bart Martens
   * Update copyright file to version 1.0 format
-  * debian/control:
-    - Update VCS-* fields
-    - Replace utils with otherosfs in Section
-    - Bump to Standards-Version 3.9.4, no changes needed
+  * Update VCS-* fields
+  * Replace utils with otherosfs in Section
+  * Bump to Standards-Version 3.9.4, no changes needed
 
  -- Prach Pongpanich <prachpub@gmail.com>  Mon, 12 Apr 2013 17:23:45 +0700
 
