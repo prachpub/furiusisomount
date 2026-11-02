@@ -1,0 +1,16 @@
+#!/bin/sh
+# Autopkgtest smoke test: the installed application must be importable,
+# answer --version and ship its data files.
+set -e
+
+python3 -c "import furiusisomount; print(furiusisomount.__version__)"
+
+furiusisomount --version
+
+test -f /usr/share/applications/furiusisomount.desktop
+test -f /usr/share/metainfo/furiusisomount.metainfo.xml
+test -f /usr/share/icons/hicolor/128x128/apps/furiusisomount.png
+test -f /usr/share/man/man1/furiusisomount.1.gz
+test -n "$(ls /usr/share/furiusisomount/translations/*.qm 2>/dev/null)"
+
+echo "smoke test OK"

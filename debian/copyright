@@ -1,15 +1,15 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Furius ISO Mount
-Upstream-Contact: Dean Harris <marcus_furius@hotmail.com>
-Source: https://launchpad.net/furiusisomount
+Upstream-Contact: Washington Indacochea Delgado <linuxfrontier@proton.me>
+Source: https://github.com/wachin/furiusisomount
 
 Files: *
-Copyright: 2008, Dean Harris <marcus_furius@hotmail.com>
+Copyright: Dean Harris <marcus_furius@hotmail.com>
+           2026 Washington Indacochea Delgado <linuxfrontier@proton.me>
 License: GPL-3+
 
 Files: debian/*
-Copyright: 2009-2012, Alessio Treglia <alessio@debian.org>
-           2013, Prach Pongpanich <prachpub@gmail.com>
+Copyright: 2026 Washington Indacochea Delgado <linuxfrontier@proton.me>
 License: GPL-3+
 
 License: GPL-3+
@@ -24,6 +24,7 @@ License: GPL-3+
  GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program.  If not, see <http://www.gnu.org/licenses/>.
- Comment: On Debian GNU/Linux systems, the complete text of the GNU General
- Public License can be found in /usr/share/common-licenses/GPL-3
+ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General Public
+ License version 3 can be found in "/usr/share/common-licenses/GPL-3".

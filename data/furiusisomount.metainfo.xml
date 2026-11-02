@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.wachin.furiusisomount</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Furius ISO Mount</name>
+  <summary>Mount ISO, IMG, BIN, MDF and NRG disc images</summary>
+  <description>
+    <p>
+      Furius ISO Mount is a simple application to mount disc images without
+      burning them to a physical disc. It supports ISO, IMG, BIN, MDF and NRG
+      images.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Mount and unmount images with FUSE (fuseiso) or loop devices (udisks2)</li>
+      <li>MD5 and SHA1 checksum calculation with progress and cancellation</li>
+      <li>BIN/CUE to ISO conversion</li>
+      <li>Image burning with brasero or wodim</li>
+      <li>Interface in English, Spanish, French, Portuguese, German, Italian, Japanese, Russian and Chinese</li>
+    </ul>
+    <p>
+      This application is a PyQt6 fork of the original Furius ISO Mount by
+      Dean Harris.
+    </p>
+  </description>
+  <launchable type="desktop-id">furiusisomount.desktop</launchable>
+  <url type="homepage">https://github.com/wachin/furiusisomount</url>
+  <url type="bugtracker">https://github.com/wachin/furiusisomount/issues</url>
+  <developer id="io.github.wachin">
+    <name>Washington Indacochea Delgado</name>
+  </developer>
+  <provides>
+    <binary>furiusisomount</binary>
+  </provides>
+  <categories>
+    <category>Utility</category>
+    <category>System</category>
+  </categories>
+  <content_rating type="oars-1.1" />
+</component>

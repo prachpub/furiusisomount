@@ -1,4 +1,4 @@
-furiusisomount usr/bin
-debian/furiusisomount.xpm usr/share/pixmaps
-debian/furiusisomount.desktop usr/share/applications
-locale/* usr/share/locale
+resources/icons/furiusisomount.png usr/share/icons/hicolor/128x128/apps
+translations/*.qm usr/share/furiusisomount/translations
+data/furiusisomount.desktop usr/share/applications
+data/furiusisomount.metainfo.xml usr/share/metainfo

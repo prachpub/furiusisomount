@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Qt Linguist generated files (keep the .ts sources)
+# translations/*.qm is versioned on purpose (shipped with the release)
+
+# Debian build results (dpkg-buildpackage)
+debian/files
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/furiusisomount/
+debian/furiusisomount.substvars
+*.debhelper.log
+*.debhelper

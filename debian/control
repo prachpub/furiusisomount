@@ -1,39 +1,43 @@
 Source: furiusisomount
-Section: otherosfs
+Section: utils
 Priority: optional
-Maintainer: Prach Pongpanich <prachpub@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~),
- python-all (>= 2.6.6-3)
-Standards-Version: 3.9.4
-X-Python-Version: >= 2.5
-Homepage: https://launchpad.net/furiusisomount
-Vcs-Git: git://github.com/prachpub/furiusisomount.git
-Vcs-Browser: https://github.com/prachpub/furiusisomount
+Maintainer: Washington Indacochea Delgado <linuxfrontier@proton.me>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all,
+               python3-setuptools,
+               pybuild-plugin-pyproject
+Standards-Version: 4.7.4
+Rules-Requires-Root: no
+Homepage: https://github.com/wachin/furiusisomount
+Vcs-Browser: https://github.com/wachin/furiusisomount
+Vcs-Git: https://github.com/wachin/furiusisomount.git
+Testsuite: autopkgtest
 
 Package: furiusisomount
 Architecture: all
-Depends: ${python:Depends},
- ${misc:Depends},
- fuseiso,
- fuseiso9660,
- python-gtk2,
- python-glade2,
- nautilus
-Suggests: brasero
-Description: ISO, IMG, BIN, MDF and NRG image management utility
- Furius ISO Mount is a simple application for mounting ISO, IMG,
- BIN, MDF and NG image files even without burning them to disk.
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         python3-pyqt6,
+         fuseiso,
+         udisks2
+Recommends: bchunk,
+            brasero | wodim,
+            lsof,
+            xdg-utils
+Description: mount ISO, IMG, BIN, MDF and NRG disc images
+ Furius ISO Mount is a simple graphical application to mount disc images
+ without burning them to a physical disc.
  .
- It provides the following features:
-  - Automatically Mounts ISO, IMG, BIN, MDF and NRG image files.
-  - Automatically creates a mount point in your home directory.
-  - Automatically Unmounts the Image files.
-  - Automatically removes the mount directory to return your home
-    directory to its previous state.
-  - Automatically saves the history of the last 10 images mounted.
-  - Mounts multiple images.
-  - Burn ISO and IMG Files to optical disk.
-  - Generate Md5 and SHA1 checksums.
-  - Automatically retrieves any previously unmounted images.
-  - Automatically generates a log file of all commands needed to
-    mount and unmount images manually.
+ It supports ISO, IMG, BIN, MDF and NRG images with two mounting methods
+ (FUSE through fuseiso and loop devices through udisks2) and includes extra
+ tools:
+ .
+  * MD5 and SHA1 checksum calculation with progress and cancellation.
+  * BIN/CUE to ISO conversion.
+  * Image burning with brasero or wodim.
+  * Multi-language interface: English, Spanish, French, Portuguese, German,
+    Italian, Japanese, Russian and Chinese.
+ .
+ This package contains the PyQt6 fork of the original Furius ISO Mount by
+ Dean Harris.

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Furius ISO Mount
+GenericName=Disc Image Mounter
+Comment=Mount ISO, IMG, BIN, MDF and NRG disc images without burning them
+Comment[es]=Monta imágenes de disco ISO, IMG, BIN, MDF y NRG sin necesidad de grabarlas
+Exec=furiusisomount %f
+Icon=furiusisomount
+Terminal=false
+Categories=Utility;System;Qt;
+Keywords=iso;mount;image;disc;cd;dvd;bin;cue;
+MimeType=application/x-cd-image;application/x-iso9660-image;
+StartupNotify=true

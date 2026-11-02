@@ -1,28 +1,75 @@
-.TH FURIUSISOMOUNT 1 "May 6, 2009"
-.SH "NAME"
-furiusisomount \- mount image files without burning them
-.SH "SYNOPSIS"
+.TH FURIUSISOMOUNT 1 "October 2026" "furiusisomount 0.11.3.1" "User Commands"
+.SH NAME
+furiusisomount \- mount ISO, IMG, BIN, MDF and NRG disc images
+.SH SYNOPSIS
 .B furiusisomount
-.SH "DESCRIPTION"
+.RI [ option ]...
+.RI [ file ]...
+.SH DESCRIPTION
+.B furiusisomount
+is a simple graphical application to mount disc images without burning them
+to a physical disc. It supports ISO, IMG, BIN, MDF and NRG images.
 .PP
-.B Furius ISO Mount
-is a simple application which allows user to mount and manage image files. It
-supports a wide variety of formats, like ISO, IMG, BIN, MDF and NRG.
-.B Furius ISO Mount
-gives user the possibility to mount one or more images to his home directory
-with only a click, burn to an optical disk, generate and verify MD5 and SHA1
-checksum, maintain an history of previously mounted images and lot of more. 
+Images can be mounted with two methods: FUSE (through
+.BR fuseiso (1))
+or loop devices (through
+.BR udisksctl (8)
+from udisks2). The application also calculates MD5 and SHA1 checksums,
+converts BIN/CUE images to ISO (with
+.BR bchunk (1))
+and can start burning an image with brasero or wodim.
 .PP
-.B Furius ISO Mount
-has been written with Python and GTK+2, and after installing the application
-you can run it from the
-.B Applications
-menu. 
+The interface is translated into several languages (English, Spanish,
+French, Portuguese, German, Italian, Japanese, Russian and Chinese).
+The language is taken from the system locale unless it is overridden by the
+.B FURIUSISOMOUNT_LANG
+environment variable.
+.SH OPTIONS
+.TP
+.BR \-h ", " \-\-help
+Print a short usage message and exit.
+.TP
+.BR \-V ", " \-\-version
+Print the program version and exit.
+.TP
+.IR file ...
+Image files (*.iso, *.img, *.bin, *.mdf, *.nrg) are opened in the mount tab
+and *.cue files are opened in the convert tab.
+.SH ENVIRONMENT
+.TP
+.B FURIUSISOMOUNT_LANG
+Force the interface language (for example
+.BR es ", " fr ", " de ).
+.TP
+.B FURIUSISOMOUNT_TRANSLATIONS
+Directory containing compiled Qt translation files (furiusisomount_LL.qm).
+.SH FILES
+.TP
+.I ~/.furiusisomount/
+Per user state: settings.cfg, FuriusMountLog.txt, FuriusMountList.csv and
+FuriusMountHistory.txt.
+.SH EXIT STATUS
+.TP
+.B 0
+Normal exit.
+.TP
+.B 2
+Invalid command line option.
+.SH EXAMPLES
+.TP
+Start the application and open an image:
+.B furiusisomount ~/images/distro.iso
+.SH AUTHORS
+Dean Harris is the author of the original Furius ISO Mount.
+The PyQt6 fork is maintained by Washington Indacochea Delgado.
 .PP
-.SH "SEE ALSO"
-.BR fuseiso (1)
-.SH "AUTHOR"
-furiusisomount was written by Dean Harris <marcus_furius@hotmail.com>.
-.PP
-This manual page was written by Alessio Treglia <quadrispro@ubuntu.com>,
-for the Debian project (and may be used by others).
+Report bugs at https://github.com/wachin/furiusisomount/issues
+.SH COPYRIGHT
+Copyright \(co 2026 Washington Indacochea Delgado.
+Licensed under the GNU General Public License version 3 or later.
+.SH SEE ALSO
+.BR fuseiso (1),
+.BR bchunk (1),
+.BR udisksctl (8),
+.BR brasero (1),
+.BR wodim (1)
